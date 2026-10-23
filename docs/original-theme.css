@@ -1,0 +1,111 @@
+
+/*
+ Theme Name:     Webbros
+ Author:         Webbros Digital
+ Author URI:     https://www.webbros.co.nz
+ Template:       Divi
+ Version:        1.0
+*/
+
+
+/* ----------- PUT YOUR CUSTOM CSS BELOW THIS LINE -- DO NOT EDIT ABOVE THIS LINE --------------------------- */
+body:after{
+ display:none;
+ content: url(/wp-content/uploads/2019/11/Sustainability-Header2.jpg) url(/wp-content/uploads/2019/11/Sustainability-Header-1.jpg);
+}
+.vertical-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media all and (min-width: 480px){
+    .keep600 {
+        min-width: 600px!important;
+    }
+    .right-slant-dark-trans:before,.left-slant-op:after,.right-slant-op:before,.left-slant-light-blue:after,.right-slant-light-blue:before,.left-slant-dark:after,.right-slant-dark:before,.left-slant-green:after,.right-slant-green:before{
+        width: 115%;
+        height: 100%;
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 0;
+    }
+}
+.left-slant-op:after{
+    left:0;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+    background-color: rgb(0,186,224);
+}
+.right-slant-op:before{
+    right: 0;
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+    background-color: #4bc8e1;
+}
+.left-slant-light-blue:after{
+    left:0;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+    background-color: rgba(0,186,224,0.80);
+}
+.right-slant-light-blue:before{
+    right: 0;
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+    background-color: rgba(0,186,224,0.80);
+}
+.left-slant-dark:after{
+    left:0;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+    background-color: #000019;
+}
+.right-slant-dark:before{
+    right: 0;
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+    background-color: #000019;
+}
+.left-slant-green:after{
+    left:0;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+    background-color: #003241;
+}
+.right-slant-green:before{
+    right: 0;
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+    background-color: #003241;
+}
+.right-slant-dark-trans:before{
+    right: 0;
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+    background-color: rgba(0, 0, 25, 0.63);
+}
+
+/* Remove Gallery Border */
+
+#gallery-1 img, #gallery-2 img, #gallery-3 img, #gallery-4 img {
+				border: none !important;
+}
+
+.et_pb_gallery_image img {
+    width: auto !important;
+    height: auto !important;
+    position: relative;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.instashow-gallery-container{
+  background: #000019 !important;
+}
+.instashow-gallery .instashow-gallery-media-cover {
+    background: rgba(0,186,224,0.80)!important;
+}
+.instashow-gallery .instashow-gallery-control-arrow::after, .instashow-gallery .instashow-gallery-control-arrow::before {
+    background: rgb(0,186,224)!important;
+}
+
+.et-pb-contact-message {
+color: #ffffff !important;
+font-size: 16px;
+}
+
