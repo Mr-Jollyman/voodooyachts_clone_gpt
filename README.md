@@ -48,3 +48,9 @@ The project already includes the generated public content and optimized assets. 
 For a future content refresh, `scripts/import_wordpress.py /workspace/site-source` requires Python and Pillow. It reads only public XML records and the database's NextGEN gallery tables. Review its import report before accepting content changes. `scripts/recover_media.py` fetches public originals over TLS; `scripts/prepare_videos.py` requires ffmpeg and ffprobe. Source-inspection scripts are developer helpers, not runtime dependencies. Do not copy raw database or WordPress configuration files into the project.
 
 See [the handover](docs/coverage.md) before treating this as a complete production migration.
+
+## Automatic review deployments
+
+The repository includes `vercel.json` and `netlify.toml`; either service can build it without manually uploading files. Import `Mr-Jollyman/voodooyachts_clone_gpt` from GitHub, use `main` as the production branch, and keep the project root at the repository root. The build command is `npm run build`; output is `dist`. No environment variables or secrets are required for this prototype. Host authorization must be completed in the hosting provider's account.
+
+After the repository is connected, pushes to `main` update the review site and branch/PR changes receive provider preview deployments. Both configurations keep the prototype noindex and support the original page URLs. Use the provider-generated preview hostname; do not attach or change the existing Voodoo Yachts production domain.
